@@ -19,5 +19,4 @@ demo = gr.Interface(
     description="Upload a road image to detect potholes."
 )
 
-# This line is the fix for Render
 demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
